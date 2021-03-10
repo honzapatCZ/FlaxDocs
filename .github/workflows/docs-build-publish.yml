@@ -38,11 +38,11 @@ jobs:
         repository: honzapatCZ/flaxdocs-host
         ref: master
         fetch-depth: 1
-        path: docs/live
-		
+        path: docs/live	
+	
     - name: Clear live docs repo
       run: rm -rf live/*
-	  
+      
     - name: Commit and push
       run: |
         cd live
