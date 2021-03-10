@@ -20,11 +20,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: honzapatCZ/flaxdocs-host
-          path: docs/live
+          path: docs/_site
           fetch-depth: 1
 
       - name: Clear live docs repo
-        run: rm -rf docs/live/*
+        run: rm -rf docs/_site/*
 
       - name: Get mono
         run: |
@@ -43,7 +43,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          cd live
+          cd _site
           git config --global user.email "noreply@nejcraft.cz"
           git config --global user.name "Automated System"
           git add .
