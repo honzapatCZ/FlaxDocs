@@ -18,6 +18,7 @@ jobs:
         with:
           repository: honzapatCZ/flaxdocs-host
           path: _site
+          ref: live
           fetch-depth: 1
 
       - name: Clear live docs repo
