@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 1
 
       - name: Clear live docs repo
-        run: rm -rf live/*
+        run: rm -rf docs/live/*
 
       - name: Get mono
         run: |
